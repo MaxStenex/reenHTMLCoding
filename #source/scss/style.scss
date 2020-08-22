@@ -3,6 +3,14 @@
 @import "footer.scss";
 @import "normalize.scss";
 
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 400;
+   font-size: 26px;
+}
 
-
-
+.container {
+   max-width: 1180px;
+   padding: 0px 10px;
+   margin: 0 auto;
+}
