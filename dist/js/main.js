@@ -1,17 +1,12 @@
-function testWebP(callback) {
+'use strict'
 
-	var webP = new Image();
-	webP.onload = webP.onerror = function () {
-		callback(webP.height == 2);
-	};
-	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-}
+const mainMenuOpeningButton = document.querySelector('.main-menu__burger-button');
+const mainMenuList = document.querySelector('.main-menu__list');
 
-testWebP(function (support) {
-
-	if (support == true) {
-		document.querySelector('body').classList.add('webp');
-	} else{
-		document.querySelector('body').classList.add('no-webp');
-	}
+mainMenuOpeningButton.addEventListener('click', (evt) => {
+   evt.preventDefault();
+   mainMenuOpeningButton.classList.toggle('menu-closed');
+   mainMenuOpeningButton.classList.toggle('menu-opened');
+   mainMenuList.classList.toggle('menu-closed');
+   mainMenuList.classList.toggle('menu-opened');
 });
