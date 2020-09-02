@@ -72,16 +72,7 @@ align-items: center;
          order:3;
       }
    }
-
-   &__search {
-      @media (max-width:970px) {
-         order:2;
-      }
-      & img {
-         display: flex;
-         align-items: center;
-      }
-   }
+   
 }
 .main-menu {
    position: relative;
@@ -95,7 +86,7 @@ align-items: center;
          justify-content: center;
          text-align: center;
          background-color: #506a85;
-         width: 200px;
+         width: 250px;
          display: flex;
          flex-direction: column;
          z-index: 666;
